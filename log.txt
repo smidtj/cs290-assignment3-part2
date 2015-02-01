@@ -1,0 +1,21 @@
+This is the log files for Assignment 3 by Jesse Smidt.
+
+Start: Wed, 21 Jan 2015 18:30:00 +0000
+End: Wed, 21 Jan 2015 18:49:54 +0000 
+Task: Initial commit.  Cloned assignment directory and coppied required files into personal assignment directory.  Edited Log file.
+
+Start: Thu, 22 Jan 2015 12:15:00 +0000
+End: Thu, 22 Jan 2015 15:57:58 +0000 
+Task: Worked on functions.js, objects.js, and variables.js. Found some aspects challenging but educational.  parseGit in functions.js needs fixing
+
+Start: Thu, 22 Jan 2015 15:57:58 +0000 
+End: Thu, 22 Jan 2015 16:04:32 +0000
+Tasks: adding updated log
+
+Start: Thu, 29 Jan 2015 11:00:00 +0000
+End: Thu, 29 Jan 2015 11:34:56 +0000
+Tasks: Fix for function parseGit by implementing new keyword
+
+For Part_2 I spent rougly ~4 hours over 4 days for a total of 16hrs to
+complete the assignment.  I did not keep a continuous log as I only noticed
+it was requested after a post on the discussion boards.

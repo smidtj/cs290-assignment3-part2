@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset='utf-8'>
+	<title>Assignment 3 Part 2</title>
+	<script type="text/javascript" src='source.js'></script>	
+</head>
+	<input type="button" value="clear ALL" onclick="clearLocal()"></input>
+	Favorites: <br> 
+<header id="favorites">
+</header>
+<body> 
+Assignment 3 Part 2 | JavaScript and Ajax <br>
+	<form>
+		Enter number of pages to display (30 unfiltered results per page):<br>
+		<input type='number' name='numPages' id ='numPages' value = 1><br>
+		Select Languages to filter by<br>
+		Python <input type='checkbox' name='language' value='Python'><br>
+		JSON <input type='checkbox' name='language' value='JSON'><br>
+		JavaScript <input type='checkbox' name='language' value='JavaScript'><br>
+		SQL <input type='checkbox' name='language' value='SQL'><br>
+		<input type='submit' value='Search' onclick="return getGists()">
+	</form>
+	<br>
+	<div>Gists: <br> 
+		<p id='output'></p>
+	</div>
+</body> 
+</html>
+
+		
