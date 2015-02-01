@@ -96,10 +96,20 @@ function getGists(){
 			var json = document.getElementsByName('language')[1].checked
 			var javascript = document.getElementsByName('language')[2].checked
 			var sql = document.getElementsByName('language')[3].checked
-			if(!python && !json && !javascript && !sql){
-				printGist(gistArray[j][k]);	
-			} else if ((python && gistArray[j][k].language == "Python") || (json && gistArray[j][k].language == "JSON") || (javascript && gistArray[j][k].language == "JavaScript") || (sql && gistArray[j][k].language == "SQL")){
-				printGist(gistArray[j][k]);
+			var i = 0
+			var marker = false
+			while (localStorage.getItem("key " + i + 0) || localStorage.getItem("key " + (i + 1) + 0) || localStorage.getItem("key " + (i + 2) + 0) || localStorage.getItem("key " + (i + 3) + 0)){
+				if (localStorage.getItem("key " + i + 2) === url){
+					marker = true
+				}
+				i++;
+			}
+			if (!marker){
+				if(!python && !json && !javascript && !sql){
+					printGist(gistArray[j][k]);	
+				} else if ((python && gistArray[j][k].language == "Python") || (json && gistArray[j][k].language == "JSON") || (javascript && gistArray[j][k].language == "JavaScript") || (sql && gistArray[j][k].language == "SQL")){
+					printGist(gistArray[j][k]);
+				}
 			}
 		}
 	}
